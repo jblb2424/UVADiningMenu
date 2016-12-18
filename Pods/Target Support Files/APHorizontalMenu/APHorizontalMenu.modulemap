@@ -1,0 +1,6 @@
+framework module APHorizontalMenu {
+  umbrella header "APHorizontalMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

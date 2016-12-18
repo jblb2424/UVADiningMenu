@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="ProductTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hri-fB-Ccj">
+                        <rect key="frame" x="13" y="13" width="270" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6s-0d-efE">
+                        <rect key="frame" x="13" y="31" width="337" height="31"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hri-fB-Ccj" firstAttribute="leading" secondItem="E6s-0d-efE" secondAttribute="leading" id="26f-XV-CaM"/>
+                    <constraint firstItem="hri-fB-Ccj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5f8-Wi-yer"/>
+                    <constraint firstAttribute="trailing" secondItem="E6s-0d-efE" secondAttribute="trailing" id="7Dq-j9-aH0"/>
+                    <constraint firstItem="hri-fB-Ccj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="M5i-cx-xxi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hri-fB-Ccj" secondAttribute="trailing" constant="59" id="Yqo-dU-GHu"/>
+                    <constraint firstItem="hri-fB-Ccj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="a9G-6H-Des"/>
+                    <constraint firstItem="E6s-0d-efE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="hhK-Zl-5Af"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="E6s-0d-efE" secondAttribute="bottom" constant="-0.5" id="zVe-P5-h3O"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="5f8-Wi-yer"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productDescriptionLabel" destination="E6s-0d-efE" id="Zli-12-YOw"/>
+                <outlet property="productTitleLabel" destination="hri-fB-Ccj" id="zhc-Gx-xfK"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="266"/>
+        </tableViewCell>
+    </objects>
+</document>

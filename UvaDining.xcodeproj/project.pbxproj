@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB12585A22B63FF918601D1D /* Pods_UvaDining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38DD0CCA056C8E84A74F040 /* Pods_UvaDining.framework */; };
+		C30708771D074120006305B5 /* ViewControllerAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30708761D074120006305B5 /* ViewControllerAbout.swift */; };
+		C30708791D076BBC006305B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30708781D076BBC006305B5 /* Constants.swift */; };
+		C307087C1D07AD9F006305B5 /* ViewControllerSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307087B1D07AD9F006305B5 /* ViewControllerSelection.swift */; };
+		C30A498E1CF23A070048A0DC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A498D1CF23A070048A0DC /* CloudKit.framework */; };
+		C36F1A8D1D5BC6C7006A462E /* NavigationControllerSubClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F1A8C1D5BC6C7006A462E /* NavigationControllerSubClass.swift */; };
+		C38EE4471D402DA300D27885 /* MIResizableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EE4461D402DA300D27885 /* MIResizableTableView.m */; };
+		C38EE44B1D402E6E00D27885 /* MIResizableTableViewSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EE44A1D402E6E00D27885 /* MIResizableTableViewSectionHeader.m */; };
+		C38EE44D1D402E8A00D27885 /* MIResizableTableViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38EE44C1D402E8A00D27885 /* MIResizableTableViewSectionHeader.xib */; };
+		C38EE44F1D4090BF00D27885 /* ViewControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38EE44E1D4090BF00D27885 /* ViewControllerMenu.swift */; };
+		C38EE4541D43FD0B00D27885 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EE4521D43FD0B00D27885 /* ProductTableViewCell.m */; };
+		C38EE4551D43FD0B00D27885 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38EE4531D43FD0B00D27885 /* ProductTableViewCell.xib */; };
+		C38EE45B1D44015E00D27885 /* CategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EE4591D44015E00D27885 /* CategoryView.m */; };
+		C38EE45C1D44015E00D27885 /* CategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38EE45A1D44015E00D27885 /* CategoryView.xib */; };
+		C3ACD9751CD1B562007233BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACD9741CD1B562007233BA /* Extensions.swift */; };
+		C3ACD9771CD6C5FF007233BA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACD9761CD6C5FF007233BA /* TableView.swift */; };
+		C3ACD97B1CD6E618007233BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3ACD97A1CD6E618007233BA /* Main.storyboard */; };
 		C3B192E61C6C2D0C004A8704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B192E51C6C2D0C004A8704 /* AppDelegate.swift */; };
-		C3B192E81C6C2D0C004A8704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B192E71C6C2D0C004A8704 /* ViewController.swift */; };
-		C3B192EB1C6C2D0C004A8704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B192E91C6C2D0C004A8704 /* Main.storyboard */; };
 		C3B192ED1C6C2D0C004A8704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B192EC1C6C2D0C004A8704 /* Assets.xcassets */; };
 		C3B192F01C6C2D0C004A8704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B192EE1C6C2D0C004A8704 /* LaunchScreen.storyboard */; };
 		C3B192FB1C6C2D0C004A8704 /* UvaDiningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B192FA1C6C2D0C004A8704 /* UvaDiningTests.swift */; };
 		C3B193061C6C2D0C004A8704 /* UvaDiningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B193051C6C2D0C004A8704 /* UvaDiningUITests.swift */; };
+		C3D1887A1CFCCD0E0094BCDC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D188791CFCCD0E0094BCDC /* Model.swift */; };
+		C3DBB80D1CEAB7110034AA52 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DBB80C1CEAB7110034AA52 /* Parent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +51,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99DF1BC849107251DC87256D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A859E333E49F6B2AFF40CF0C /* Pods-UvaDining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UvaDining.release.xcconfig"; path = "Pods/Target Support Files/Pods-UvaDining/Pods-UvaDining.release.xcconfig"; sourceTree = "<group>"; };
+		ABFB61040CCA70BB90B283A1 /* Pods-UvaDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UvaDining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UvaDining/Pods-UvaDining.debug.xcconfig"; sourceTree = "<group>"; };
+		C30708761D074120006305B5 /* ViewControllerAbout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAbout.swift; sourceTree = "<group>"; };
+		C30708781D076BBC006305B5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C307087B1D07AD9F006305B5 /* ViewControllerSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSelection.swift; sourceTree = "<group>"; };
+		C30A498C1CF239CD0048A0DC /* UvaDining.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = UvaDining.entitlements; sourceTree = "<group>"; };
+		C30A498D1CF23A070048A0DC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C36F1A8C1D5BC6C7006A462E /* NavigationControllerSubClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerSubClass.swift; sourceTree = "<group>"; };
+		C38EE4451D402D9500D27885 /* MIResizableTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIResizableTableView.h; sourceTree = "<group>"; };
+		C38EE4461D402DA300D27885 /* MIResizableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIResizableTableView.m; sourceTree = "<group>"; };
+		C38EE4491D402E5F00D27885 /* MIResizableTableViewSectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIResizableTableViewSectionHeader.h; sourceTree = "<group>"; };
+		C38EE44A1D402E6E00D27885 /* MIResizableTableViewSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIResizableTableViewSectionHeader.m; sourceTree = "<group>"; };
+		C38EE44C1D402E8A00D27885 /* MIResizableTableViewSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIResizableTableViewSectionHeader.xib; sourceTree = "<group>"; };
+		C38EE44E1D4090BF00D27885 /* ViewControllerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMenu.swift; sourceTree = "<group>"; };
+		C38EE4511D43FD0B00D27885 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		C38EE4521D43FD0B00D27885 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		C38EE4531D43FD0B00D27885 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		C38EE4581D44015E00D27885 /* CategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryView.h; sourceTree = "<group>"; };
+		C38EE4591D44015E00D27885 /* CategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryView.m; sourceTree = "<group>"; };
+		C38EE45A1D44015E00D27885 /* CategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryView.xib; sourceTree = "<group>"; };
+		C3ACD9711CC5B921007233BA /* UvaDining-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UvaDining-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3ACD9741CD1B562007233BA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C3ACD9761CD6C5FF007233BA /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		C3ACD97A1CD6E618007233BA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C3B192E21C6C2D0C004A8704 /* UvaDining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UvaDining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B192E51C6C2D0C004A8704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3B192E71C6C2D0C004A8704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C3B192EA1C6C2D0C004A8704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3B192EC1C6C2D0C004A8704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B192EF1C6C2D0C004A8704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3B192F11C6C2D0C004A8704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +87,9 @@
 		C3B193011C6C2D0C004A8704 /* UvaDiningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UvaDiningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B193051C6C2D0C004A8704 /* UvaDiningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UvaDiningUITests.swift; sourceTree = "<group>"; };
 		C3B193071C6C2D0C004A8704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D188791CFCCD0E0094BCDC /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C3DBB80C1CEAB7110034AA52 /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		F38DD0CCA056C8E84A74F040 /* Pods_UvaDining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UvaDining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30A498E1CF23A070048A0DC /* CloudKit.framework in Frameworks */,
+				BB12585A22B63FF918601D1D /* Pods_UvaDining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +119,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10D5CFA494D8B7C5EFCB988C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABFB61040CCA70BB90B283A1 /* Pods-UvaDining.debug.xcconfig */,
+				A859E333E49F6B2AFF40CF0C /* Pods-UvaDining.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1F7CE8965C77A502BD11D303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C30A498D1CF23A070048A0DC /* CloudKit.framework */,
+				99DF1BC849107251DC87256D /* Pods.framework */,
+				F38DD0CCA056C8E84A74F040 /* Pods_UvaDining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C307087A1D07AD63006305B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C30708761D074120006305B5 /* ViewControllerAbout.swift */,
+				C307087B1D07AD9F006305B5 /* ViewControllerSelection.swift */,
+				C38EE44E1D4090BF00D27885 /* ViewControllerMenu.swift */,
+				C36F1A8C1D5BC6C7006A462E /* NavigationControllerSubClass.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C38EE4481D402DC700D27885 /* MIResizabeleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C38EE4571D44015E00D27885 /* CategoryView */,
+				C38EE4561D43FD3200D27885 /* SectionHeader */,
+				C38EE4501D43FD0B00D27885 /* ProductCell */,
+				C38EE4451D402D9500D27885 /* MIResizableTableView.h */,
+				C38EE4461D402DA300D27885 /* MIResizableTableView.m */,
+			);
+			name = MIResizabeleTableView;
+			sourceTree = "<group>";
+		};
+		C38EE4501D43FD0B00D27885 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				C38EE4511D43FD0B00D27885 /* ProductTableViewCell.h */,
+				C38EE4521D43FD0B00D27885 /* ProductTableViewCell.m */,
+				C38EE4531D43FD0B00D27885 /* ProductTableViewCell.xib */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		C38EE4561D43FD3200D27885 /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C38EE44A1D402E6E00D27885 /* MIResizableTableViewSectionHeader.m */,
+				C38EE4491D402E5F00D27885 /* MIResizableTableViewSectionHeader.h */,
+				C38EE44C1D402E8A00D27885 /* MIResizableTableViewSectionHeader.xib */,
+			);
+			name = SectionHeader;
+			sourceTree = "<group>";
+		};
+		C38EE4571D44015E00D27885 /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				C38EE4581D44015E00D27885 /* CategoryView.h */,
+				C38EE4591D44015E00D27885 /* CategoryView.m */,
+				C38EE45A1D44015E00D27885 /* CategoryView.xib */,
+			);
+			path = CategoryView;
+			sourceTree = "<group>";
+		};
 		C3B192D91C6C2D0C004A8704 = {
 			isa = PBXGroup;
 			children = (
+				C38EE4481D402DC700D27885 /* MIResizabeleTableView */,
 				C3B192E41C6C2D0C004A8704 /* UvaDining */,
 				C3B192F91C6C2D0C004A8704 /* UvaDiningTests */,
 				C3B193041C6C2D0C004A8704 /* UvaDiningUITests */,
 				C3B192E31C6C2D0C004A8704 /* Products */,
+				1F7CE8965C77A502BD11D303 /* Frameworks */,
+				C3ACD9711CC5B921007233BA /* UvaDining-Bridging-Header.h */,
+				10D5CFA494D8B7C5EFCB988C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +218,17 @@
 		C3B192E41C6C2D0C004A8704 /* UvaDining */ = {
 			isa = PBXGroup;
 			children = (
+				C30A498C1CF239CD0048A0DC /* UvaDining.entitlements */,
 				C3B192E51C6C2D0C004A8704 /* AppDelegate.swift */,
-				C3B192E71C6C2D0C004A8704 /* ViewController.swift */,
-				C3B192E91C6C2D0C004A8704 /* Main.storyboard */,
+				C3ACD97A1CD6E618007233BA /* Main.storyboard */,
+				C307087A1D07AD63006305B5 /* ViewControllers */,
+				C30708781D076BBC006305B5 /* Constants.swift */,
 				C3B192EC1C6C2D0C004A8704 /* Assets.xcassets */,
 				C3B192EE1C6C2D0C004A8704 /* LaunchScreen.storyboard */,
+				C3ACD9761CD6C5FF007233BA /* TableView.swift */,
+				C3D188791CFCCD0E0094BCDC /* Model.swift */,
+				C3ACD9741CD1B562007233BA /* Extensions.swift */,
+				C3DBB80C1CEAB7110034AA52 /* Parent.swift */,
 				C3B192F11C6C2D0C004A8704 /* Info.plist */,
 			);
 			path = UvaDining;
@@ -132,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3B1930A1C6C2D0C004A8704 /* Build configuration list for PBXNativeTarget "UvaDining" */;
 			buildPhases = (
+				3FF0C89B5D4DEB110D05C526 /* [CP] Check Pods Manifest.lock */,
 				C3B192DE1C6C2D0C004A8704 /* Sources */,
 				C3B192DF1C6C2D0C004A8704 /* Frameworks */,
 				C3B192E01C6C2D0C004A8704 /* Resources */,
+				A1BAB276D711F49D1D68089F /* [CP] Embed Pods Frameworks */,
+				ED2C7C5F73A6028065B54C48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,22 +317,30 @@
 		C3B192DA1C6C2D0C004A8704 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Justin Barry";
 				TargetAttributes = {
 					C3B192E11C6C2D0C004A8704 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = RKU2AZZ4R4;
+						DevelopmentTeam = RYDGXK2H5F;
+						LastSwiftMigration = 0810;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					C3B192F51C6C2D0C004A8704 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = RKU2AZZ4R4;
+						LastSwiftMigration = 0810;
 						TestTargetID = C3B192E11C6C2D0C004A8704;
 					};
 					C3B193001C6C2D0C004A8704 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = RKU2AZZ4R4;
+						LastSwiftMigration = 0810;
 						TestTargetID = C3B192E11C6C2D0C004A8704;
 					};
 				};
@@ -232,9 +370,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3ACD97B1CD6E618007233BA /* Main.storyboard in Resources */,
 				C3B192F01C6C2D0C004A8704 /* LaunchScreen.storyboard in Resources */,
+				C38EE4551D43FD0B00D27885 /* ProductTableViewCell.xib in Resources */,
+				C38EE44D1D402E8A00D27885 /* MIResizableTableViewSectionHeader.xib in Resources */,
+				C38EE45C1D44015E00D27885 /* CategoryView.xib in Resources */,
 				C3B192ED1C6C2D0C004A8704 /* Assets.xcassets in Resources */,
-				C3B192EB1C6C2D0C004A8704 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +395,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FF0C89B5D4DEB110D05C526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1BAB276D711F49D1D68089F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UvaDining/Pods-UvaDining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2C7C5F73A6028065B54C48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UvaDining/Pods-UvaDining-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3B192DE1C6C2D0C004A8704 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B192E81C6C2D0C004A8704 /* ViewController.swift in Sources */,
+				C38EE44F1D4090BF00D27885 /* ViewControllerMenu.swift in Sources */,
+				C3D1887A1CFCCD0E0094BCDC /* Model.swift in Sources */,
+				C38EE45B1D44015E00D27885 /* CategoryView.m in Sources */,
+				C307087C1D07AD9F006305B5 /* ViewControllerSelection.swift in Sources */,
+				C36F1A8D1D5BC6C7006A462E /* NavigationControllerSubClass.swift in Sources */,
+				C30708771D074120006305B5 /* ViewControllerAbout.swift in Sources */,
+				C30708791D076BBC006305B5 /* Constants.swift in Sources */,
+				C38EE44B1D402E6E00D27885 /* MIResizableTableViewSectionHeader.m in Sources */,
+				C38EE4541D43FD0B00D27885 /* ProductTableViewCell.m in Sources */,
+				C3ACD9771CD6C5FF007233BA /* TableView.swift in Sources */,
+				C3ACD9751CD1B562007233BA /* Extensions.swift in Sources */,
 				C3B192E61C6C2D0C004A8704 /* AppDelegate.swift in Sources */,
+				C3DBB80D1CEAB7110034AA52 /* Parent.swift in Sources */,
+				C38EE4471D402DA300D27885 /* MIResizableTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +497,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C3B192E91C6C2D0C004A8704 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3B192EA1C6C2D0C004A8704 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C3B192EE1C6C2D0C004A8704 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -398,23 +591,46 @@
 		};
 		C3B1930B1C6C2D0C004A8704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFB61040CCA70BB90B283A1 /* Pods-UvaDining.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UvaDining/UvaDining.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = UvaDining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDining;
+				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDiningMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UvaDining-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C3B1930C1C6C2D0C004A8704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A859E333E49F6B2AFF40CF0C /* Pods-UvaDining.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UvaDining/UvaDining.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = UvaDining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDining;
+				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDiningMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UvaDining-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -426,6 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDiningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UvaDining.app/UvaDining";
 			};
 			name = Debug;
@@ -438,6 +655,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDiningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UvaDining.app/UvaDining";
 			};
 			name = Release;
@@ -449,6 +667,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDiningUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = UvaDining;
 				USES_XCTRUNNER = YES;
 			};
@@ -461,6 +680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jblb.UvaDiningUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = UvaDining;
 				USES_XCTRUNNER = YES;
 			};
@@ -485,6 +705,7 @@
 				C3B1930C1C6C2D0C004A8704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B1930D1C6C2D0C004A8704 /* Build configuration list for PBXNativeTarget "UvaDiningTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +714,7 @@
 				C3B1930F1C6C2D0C004A8704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B193101C6C2D0C004A8704 /* Build configuration list for PBXNativeTarget "UvaDiningUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +723,7 @@
 				C3B193121C6C2D0C004A8704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

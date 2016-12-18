@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import UvaDining
+
 
 class UvaDiningTests: XCTestCase {
     
