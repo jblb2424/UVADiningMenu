@@ -305,11 +305,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UvaDining/Constants.swift"
-            timestampString = "492544674.346433"
+            timestampString = "504060908.859742"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "Constants"
             landmarkType = "14">
          </BreakpointContent>

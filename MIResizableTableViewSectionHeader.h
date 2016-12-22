@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @protocol MIResizableTableViewSectionHeaderDelegate <NSObject>
 
 - (void)expand:(BOOL)expand rowsInSection:(NSInteger)section;

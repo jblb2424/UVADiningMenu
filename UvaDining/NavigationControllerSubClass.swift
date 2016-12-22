@@ -11,10 +11,10 @@ import UIKit
 
 class UINavigationBarTaller: UINavigationBar {
     ///The height you want your navigation bar to be of
-    static let navigationBarHeight: CGFloat = 50
+    static let navigationBarHeight: CGFloat = 70
     
     ///The difference between new height and default height
-    static let heightIncrease:CGFloat = navigationBarHeight - 25
+    static let heightIncrease:CGFloat = navigationBarHeight - 43
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -58,3 +58,5 @@ class UINavigationBarTaller: UINavigationBar {
         return newSize;
     }
 }
+
+

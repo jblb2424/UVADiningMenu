@@ -22,6 +22,10 @@ public struct Constants {
     
     static let  dates: [String] = getDates()
     
+    static let weekDays: [String] = convertDatestoWeekDays(dates)
+    
+    static let shortendMonths: [String: String] = ["01" : "Jan.", "02": "Feb.", "03": "Mar.", "04": "Apr.", "05": "May.", "06": "June", "07": "Jul.", "08": "Aug.", "09": "Sep.", "10": "Oct.", "11": "Nov.", "12": "Dec."]
+    
     static let styler = NSDateFormatter()
     //The items app users don't care about
     static let unwantedFoods = ["American Cheese", "Cheddar Cheese", "Green Leaf Lettuce", "Tartar Sauce", "Iceberg Lettuce", "Expand All", "Collapse All", "View Selected Items", "Clear Selected", " ", "CONDIMENT (MIX): GRAVY - COUNTRY - DO NOT USE", "", "Shredded Cheddar Cheese", "Light Sour Cream", "Honey Mustard Dijon", "Light Mayonnaise", "Mayonnaise", "White Bread", "Whole Wheat Bread", "Yellow Mustard", "Dill Pickle Slices", "Pancake Syrup", "Banana Peppers", "Hummus","Kaiser Roll", "Oil & Vinegar", "Ranch Dressing", "Signature Chips", "Hoagie Roll", "Marble Rye Bread", "Shredded Carrots", "Lite Italian Dressing", "Cottage Cheese", "Swiss Cheese", "Alfredo Sauce", "Collard Greens", "Spaghetti Sauce", "Whipped Light Cream Cheese", "Whipped Margarine", "Balsamic Vinaigrette", "Citrus Water", "Creamy Caesar Dressing", "Croutons", "Fat-Free French Dressing", "Honey Mustard Dressing", "Light Ranch Dressing", "Toasted Barley", "Sunflower Seeds", "Romaine Lettuce"]

@@ -18,6 +18,8 @@ import APHorizontalMenu
 class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResizableTableViewDataSource, APHorizontalMenuSelectDelegate
 
 {
+    
+    
     //diningHall string value set based on what button is pressed in ViewControllerSelection
     var diningHall = ""
     
@@ -32,24 +34,52 @@ class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResi
     
     var brunchDict = ["category": "Brunch (Weekends Only)", "products": []]
     
-    let horizontalMenuRunk: APHorizontalMenu = APHorizontalMenu(frame: CGRectMake(-10, 60, 420, 50))
-    let weekDays = convertDatestoWeekDays(Constants.dates)
+    
+    
+    let horizontalMenuRunk: APHorizontalMenu = APHorizontalMenu(frame: CGRectMake(-10, 60, 470, 50))
+    let weekDays = Constants.weekDays
+    let dates = Constants.dates
+    var monthAndDay: [String] = []
+    
+    
+    
+    
+    
     let navyBlueColor = UIColor(red: 0, green: 0, blue: 0.5, alpha: 1)
     let baige = UIColor(red: 0.96, green: 0.96, blue: 0.86, alpha: 1)
     let betterGray = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
+    let barImage = UIImage(named: "NavBar")
+
     
     @IBOutlet weak var mealTable: MIResizableTableView!
     @IBOutlet weak var navBar: UINavigationBarTaller!
+    @IBOutlet weak var back: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
-    
+   
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        //Formats the information that will go into APHorizontal Menu(e.g Saturday, Dec.24)
+        for i in 0...7 {
+            let day = weekDays[i] + ", "
+            let date = dates[i]
+            let substringMonth = date.substringWithRange(Range<String.Index>(start: date.startIndex.advancedBy(5),end: date.startIndex.advancedBy(7)))
+            let substringDay = date.substringWithRange(Range<String.Index>(start: date.startIndex.advancedBy(8),end: date.endIndex))
+            let shortendMonth = day + Constants.shortendMonths[substringMonth]! + substringDay
+            monthAndDay.append(shortendMonth)
+        }
+        
         
       
         navBar.frame.origin.y = -10
-        navBar.barTintColor = baige
+//        navBar.barTintColor = baige
+        navBar.setBackgroundImage(barImage, forBarMetrics: .Default)
+
         
+        
+        //Customize the menu title
         titleLabel.text = diningHall
         titleLabel.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 21)
         titleLabel.layer.shadowColor = UIColor.blackColor().CGColor
@@ -66,7 +96,7 @@ class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResi
         
         //Initializes the APHorizontalMenu
         horizontalMenuRunk.delegate = self
-        horizontalMenuRunk.values = weekDays
+        horizontalMenuRunk.values = monthAndDay
         self.view!.addSubview(horizontalMenuRunk)
         self.horizontalMenuRunk.selectedIndex = 0
         self.horizontalMenuRunk.cellBackgroundColor = betterGray
@@ -74,13 +104,15 @@ class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResi
         self.horizontalMenuRunk.textSelectedColor = UIColor.orangeColor()
         self.horizontalMenuRunk.textColor = UIColor.blackColor()
         
+        
         //Grab today's menu, as the default day is today
         queryDatabase(0, hall: diningHall, dictionary: &productsList, UItable: mealTable) { dict in
             self.productsList = dict
         }
                 
     }
-
+    
+    
     func horizontalMenu(horizontalMenu: AnyObject, didSelectPosition index: Int) {
         queryDatabase(index, hall: diningHall, dictionary: &productsList, UItable: mealTable) { dict in
             self.productsList = dict

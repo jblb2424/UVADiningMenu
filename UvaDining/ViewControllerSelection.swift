@@ -61,7 +61,7 @@ class SelectionScreen: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if diningHallSelection != "About" {
             let destinationController: ViewControllerRunk = segue.destinationViewController as! ViewControllerRunk
-
+            
             destinationController.diningHall = diningHallSelection
         }
     }

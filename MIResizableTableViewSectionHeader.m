@@ -20,7 +20,13 @@
 
 @implementation MIResizableTableViewSectionHeader
 
+
+
+
+
 + (MIResizableTableViewSectionHeader *)getView {
+    
+    
     
     return [[[NSBundle mainBundle] loadNibNamed:@"MIResizableTableViewSectionHeader" owner:self options:nil] objectAtIndex:0];
 }
