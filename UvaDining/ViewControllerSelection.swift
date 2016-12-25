@@ -40,7 +40,7 @@ class SelectionScreen: UIViewController {
     
     
     override func viewDidLoad() {
-        backround.backgroundColor = smokeyGrayColor
+        
         
 //        navBar.frame.origin.y = -10
 //        navBar.barTintColor = navyBlueColor

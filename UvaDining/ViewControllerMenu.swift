@@ -36,7 +36,7 @@ class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResi
     
     
     
-    let horizontalMenuRunk: APHorizontalMenu = APHorizontalMenu(frame: CGRectMake(-10, 60, 470, 50))
+    let horizontalMenuRunk: APHorizontalMenu = APHorizontalMenu(frame: CGRectMake(-20, 60, 470, 50))
     let weekDays = Constants.weekDays
     let dates = Constants.dates
     var monthAndDay: [String] = []
@@ -81,7 +81,7 @@ class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResi
         
         //Customize the menu title
         titleLabel.text = diningHall
-        titleLabel.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 21)
+        titleLabel.font = UIFont(name: "Helvetica", size: 21)
         titleLabel.layer.shadowColor = UIColor.blackColor().CGColor
         titleLabel.layer.shadowOpacity = 1
         titleLabel.layer.shadowOffset = CGSizeZero
@@ -109,6 +109,8 @@ class ViewControllerRunk: UIViewController, MIResizableTableViewDelegate, MIResi
         queryDatabase(0, hall: diningHall, dictionary: &productsList, UItable: mealTable) { dict in
             self.productsList = dict
         }
+        
+        
                 
     }
     

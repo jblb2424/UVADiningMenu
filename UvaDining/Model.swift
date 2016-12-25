@@ -86,7 +86,7 @@ func formatData(menu: [String], inout dict:[String:NSObject]) {
     }
     
     
-    let indexes = indexFinder()
+    let indexes = indexFinder() // Index location of meal cateogires(grill, deli, ect.)
     
     for i in 0...(indexes.count) - 1 {
         var description: String = ""
@@ -94,7 +94,7 @@ func formatData(menu: [String], inout dict:[String:NSObject]) {
         var first_index: Int = 0
         var second_index: Int = 0
         
-        //The last category has no category after it for reference
+        //The last category has no category after it obviously
         //So we have to account for that
         if i != (indexes.count) - 1 {
             first_index = indexes[i]
@@ -252,13 +252,13 @@ func queryDatabase(index: Int, hall: String, inout dictionary: [[String: AnyObje
 //The predicate searches the database for records that have the correct date and dining hall
     let predicate = NSPredicate(format: "Date == %@ AND DiningHall == %@",date, hall )
     
-    var breakfastDict = ["category": "Breakfast", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Omlette Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "10.4€"],["title": "Salad Bar", "description": "", "price": "12€"], ["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omlette Options", "description": "", "price": "11.3€"], ["title": "Cereals and Grains", "description": "", "price": "16€"]]]
+    var breakfastDict = ["category": "Breakfast", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Omelete Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "10.4€"],["title": "Salad Bar", "description": "", "price": "12€"], ["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Cereals and Grains", "description": "", "price": "16€"]]]
     
-    var lunchDict = ["category": "Lunch", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Pizza", "description": "", "price": "11.3€"], ["title": "Soup and Sandwitch", "description": "", "price": "10.4€"], ["title": "Pasta", "description": "", "price": "16€"],["title": "Salad Bar", "description": "", "price": "12€"],["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omlette Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "12€"]]]
+    var lunchDict = ["category": "Lunch", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Pizza", "description": "", "price": "11.3€"], ["title": "Soup and Sandwitch", "description": "", "price": "10.4€"], ["title": "Pasta", "description": "", "price": "16€"],["title": "Salad Bar", "description": "", "price": "12€"],["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omelete Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "12€"]]]
     
-    var dinDict = ["category": "Dinner", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Pizza", "description": "", "price": "11.3€"], ["title": "Soup and Sandwitch", "description": "", "price": "10.4€"], ["title": "Pasta", "description": "", "price": "16€"],["title": "Salad Bar", "description": "", "price": "12€"],["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omlette Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "12€"]]]
+    var dinDict = ["category": "Dinner", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Pizza", "description": "", "price": "11.3€"], ["title": "Soup and Sandwitch", "description": "", "price": "10.4€"], ["title": "Pasta", "description": "", "price": "16€"],["title": "Salad Bar", "description": "", "price": "12€"],["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omelete Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "12€"]]]
     
-    var brunchDict = ["category": "Brunch (Weekends Only)", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Pizza", "description": "", "price": "11.3€"], ["title": "Soup and Sandwitch", "description": "", "price": "10.4€"], ["title": "Pasta", "description": "", "price": "16€"],["title": "Salad Bar", "description": "", "price": "12€"],["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omlette Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "12€"]]]
+    var brunchDict = ["category": "Brunch (Weekends Only)", "products": [["title": "Main Course", "description": "", "price": "12€"], ["title": "Pizza", "description": "", "price": "11.3€"], ["title": "Soup and Sandwitch", "description": "", "price": "10.4€"], ["title": "Pasta", "description": "", "price": "16€"],["title": "Salad Bar", "description": "", "price": "12€"],["title": "Vegan Options", "description": "", "price": "12€"], ["title": "Omelete Options", "description": "", "price": "11.3€"], ["title": "Baked Goods", "description": "", "price": "12€"]]]
 
     
     let query = CKQuery(recordType: "FoodData", predicate: predicate)

@@ -17,11 +17,11 @@ class ViewControllerAbout: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         adminInput.delegate = self
-        let backgroundChoiceMenu = UIImageView(frame: CGRectMake(0, 0, 375, 667));
-        let image = UIImage(named: "About");
-        backgroundChoiceMenu.image = image;
-        self.view.addSubview(backgroundChoiceMenu) 
-        self.view.addSubview(adminInput)
+//        let backgroundChoiceMenu = UIImageView(frame: CGRectMake(0, 0, 375, 667));
+//        let image = UIImage(named: "About");
+//        backgroundChoiceMenu.image = image;
+//        self.view.addSubview(backgroundChoiceMenu) 
+//        self.view.addSubview(adminInput)
     }
     
     //Lets the user submit their admin key using the return button
@@ -48,11 +48,12 @@ class ViewControllerAbout: UIViewController,UITextFieldDelegate {
             newAddRecords()
             modifyRecord()
 
-
+//
 //            for i in 0...7 {
 //                newDeleteRecord(i)
-////                newAddRecords(Constants.dates[i])
-////                modifyRecord(Constants.dates[i])
+//                newAddRecords(Constants.dates[i])
+//               modifyRecord(Constants.dates[i])
+//        }
             }
 
         }
